@@ -1,18 +1,7 @@
-USE CollegeDB;
+SET @num1 = 10;
+SET @num2 = 20;
+SET @sum = @num1 + @num2;
 
-DROP PROCEDURE IF EXISTS CalculateSum;
-
-DELIMITER $$
-
-CREATE PROCEDURE CalculateSum()
-BEGIN
-    -- Declare two variables
-    -- Assign values
-    -- Calculate and display the sum
-
-END $$
-
-DELIMITER ;
-
--- Execute the procedure
-CALL CalculateSum();
+SELECT @num1 AS Number1,
+       @num2 AS Number2,
+       @sum AS Sum;
